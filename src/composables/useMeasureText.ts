@@ -7,7 +7,7 @@ export default function useMeasureText(itemElement: Ref<HTMLDivElement | null>) 
     const width = ref(0);
 
     function updateWidth() {
-        width.value = itemElement.value?.clientWidth || 16;
+        width.value = itemElement.value?.clientWidth || 6;
     }
 
     onMounted(updateWidth);
